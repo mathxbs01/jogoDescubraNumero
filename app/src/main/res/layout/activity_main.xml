@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+
     <androidx.appcompat.widget.AppCompatImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -16,8 +17,6 @@
         android:layout_height="match_parent"
         android:background="@drawable/transparentepretocinza"
         />
-
-
     <EditText
         android:id="@+id/edtValorOculto"
         android:layout_width="wrap_content"
@@ -31,8 +30,8 @@
         app:layout_constraintBottom_toTopOf="@id/edtValor"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent" />
-
+        app:layout_constraintStart_toStartOf="parent"
+        />
     <EditText
         android:id="@+id/edtValor"
         android:layout_width="match_parent"
@@ -46,31 +45,30 @@
         android:textColorHint="@android:color/white"
         app:layout_constraintBottom_toTopOf="@id/btnEnviar"
         />
-
     <Button
         android:id="@+id/btnEnviar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toTopOf="@+id/btnNovo"
         android:text="Enviar"
+        android:onClick="clickBtnEnviar"
         android:background="@drawable/botaoazuloval"
         android:textColor="@android:color/white"
         android:layout_margin="10dp"
         android:textAllCaps="false"
         />
-
     <Button
         android:id="@+id/btnNovo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toTopOf="@+id/txtDica"
         android:text="Novo"
+        android:onClick="clickBtnNovo"
         android:background="@drawable/botaoazuloval"
         android:textColor="@android:color/white"
         android:layout_margin="10dp"
         android:textAllCaps="false"
         />
-
     <TextView
         android:id="@+id/txtDica"
         android:layout_width="match_parent"
@@ -82,5 +80,4 @@
         android:layout_margin="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         />
-
 </androidx.constraintlayout.widget.ConstraintLayout>
